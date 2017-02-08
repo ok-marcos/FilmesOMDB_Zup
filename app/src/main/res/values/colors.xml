@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--https://www.materialpalette.com/deep-purple/pink-->
+    <color name="primary">#a8cc59</color>
+    <color name="primary_dark">#512DA8</color>
+    <color name="primary_light">#D1C4E9</color>
+    <color name="accent">#FF4081</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#ecebeb</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#bdf3bb</color>
+    <color name="bgmain">#DEDEDE</color>
+</resources>

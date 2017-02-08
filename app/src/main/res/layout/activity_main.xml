@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@drawable/zupimagem"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Qual filme deseja?"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="#9b020428" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="354dp"
+        android:layout_height="28dp"
+        android:id="@+id/search_edittext"
+        android:inputType="textCapSentences"
+        android:hint="@string/search_dica"
+        android:imeOptions="actionSearch"
+        android:background="@color/secondary_text"
+        android:textColorHighlight="@color/cardview_light_background"
+        android:textColorLink="?attr/colorSwitchThumbNormal"
+        android:textCursorDrawable="@color/icons"
+        android:textAppearance="@style/left_column_bold"
+        android:textColorHint="#807b7171"
+        android:textColor="#807b7171" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="349dp"
+            android:id="@+id/recycler_view"
+            android:visibility="invisible"
+            tools:ignore="ObsoleteLayoutParam"
+            android:clipToPadding="false">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:weightSum="1">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/search_button"
+            android:elevation="24dp"
+            android:visibility="visible"
+            android:textStyle="normal|bold|italic"
+            android:background="@android:drawable/ic_menu_search"
+            android:layout_width="211dp"
+            android:layout_height="100dp"
+            android:textSize="10sp"
+            android:lineSpacingExtra="10sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_spinner"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/meusfilmesid"
+            app:backgroundTint="?android:attr/textColorHintInverse"
+            android:layout_gravity="left|right"
+            app:elevation="4dp" />
+
+    </FrameLayout>
+
+</LinearLayout>
